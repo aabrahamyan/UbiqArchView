@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0BB01121DAED22A0030E81A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BB01111DAED22A0030E81A /* AppDelegate.swift */; };
+		C0BB01141DAED22A0030E81A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BB01131DAED22A0030E81A /* ViewController.swift */; };
+		C0BB01171DAED22A0030E81A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BB01151DAED22A0030E81A /* Main.storyboard */; };
+		C0BB01191DAED22A0030E81A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0BB01181DAED22A0030E81A /* Assets.xcassets */; };
+		C0BB011C1DAED22A0030E81A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BB011A1DAED22A0030E81A /* LaunchScreen.storyboard */; };
+		C0BB01271DAED22A0030E81A /* UbiqArchViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BB01261DAED22A0030E81A /* UbiqArchViewTests.swift */; };
+		C0BB01321DAED22A0030E81A /* UbiqArchViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BB01311DAED22A0030E81A /* UbiqArchViewUITests.swift */; };
+		C0BB01401DAED5650030E81A /* UbiqArchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BB013F1DAED5650030E81A /* UbiqArchView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0BB01231DAED22A0030E81A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0BB01061DAED2290030E81A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0BB010D1DAED2290030E81A;
+			remoteInfo = UbiqArchView;
+		};
+		C0BB012E1DAED22A0030E81A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0BB01061DAED2290030E81A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0BB010D1DAED2290030E81A;
+			remoteInfo = UbiqArchView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C0BB010E1DAED22A0030E81A /* UbiqArchView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UbiqArchView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0BB01111DAED22A0030E81A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0BB01131DAED22A0030E81A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C0BB01161DAED22A0030E81A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0BB01181DAED22A0030E81A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0BB011B1DAED22A0030E81A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0BB011D1DAED22A0030E81A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0BB01221DAED22A0030E81A /* UbiqArchViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UbiqArchViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0BB01261DAED22A0030E81A /* UbiqArchViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UbiqArchViewTests.swift; sourceTree = "<group>"; };
+		C0BB01281DAED22A0030E81A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0BB012D1DAED22A0030E81A /* UbiqArchViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UbiqArchViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0BB01311DAED22A0030E81A /* UbiqArchViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UbiqArchViewUITests.swift; sourceTree = "<group>"; };
+		C0BB01331DAED22A0030E81A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0BB013F1DAED5650030E81A /* UbiqArchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UbiqArchView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0BB010B1DAED2290030E81A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0BB011F1DAED22A0030E81A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0BB012A1DAED22A0030E81A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0BB01051DAED2290030E81A = {
+			isa = PBXGroup;
+			children = (
+				C0BB01101DAED22A0030E81A /* UbiqArchView */,
+				C0BB01251DAED22A0030E81A /* UbiqArchViewTests */,
+				C0BB01301DAED22A0030E81A /* UbiqArchViewUITests */,
+				C0BB010F1DAED22A0030E81A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0BB010F1DAED22A0030E81A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0BB010E1DAED22A0030E81A /* UbiqArchView.app */,
+				C0BB01221DAED22A0030E81A /* UbiqArchViewTests.xctest */,
+				C0BB012D1DAED22A0030E81A /* UbiqArchViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0BB01101DAED22A0030E81A /* UbiqArchView */ = {
+			isa = PBXGroup;
+			children = (
+				C0BB013F1DAED5650030E81A /* UbiqArchView.swift */,
+				C0BB01111DAED22A0030E81A /* AppDelegate.swift */,
+				C0BB01131DAED22A0030E81A /* ViewController.swift */,
+				C0BB01151DAED22A0030E81A /* Main.storyboard */,
+				C0BB01181DAED22A0030E81A /* Assets.xcassets */,
+				C0BB011A1DAED22A0030E81A /* LaunchScreen.storyboard */,
+				C0BB011D1DAED22A0030E81A /* Info.plist */,
+			);
+			path = UbiqArchView;
+			sourceTree = "<group>";
+		};
+		C0BB01251DAED22A0030E81A /* UbiqArchViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0BB01261DAED22A0030E81A /* UbiqArchViewTests.swift */,
+				C0BB01281DAED22A0030E81A /* Info.plist */,
+			);
+			path = UbiqArchViewTests;
+			sourceTree = "<group>";
+		};
+		C0BB01301DAED22A0030E81A /* UbiqArchViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C0BB01311DAED22A0030E81A /* UbiqArchViewUITests.swift */,
+				C0BB01331DAED22A0030E81A /* Info.plist */,
+			);
+			path = UbiqArchViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0BB010D1DAED2290030E81A /* UbiqArchView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0BB01361DAED22A0030E81A /* Build configuration list for PBXNativeTarget "UbiqArchView" */;
+			buildPhases = (
+				C0BB010A1DAED2290030E81A /* Sources */,
+				C0BB010B1DAED2290030E81A /* Frameworks */,
+				C0BB010C1DAED2290030E81A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UbiqArchView;
+			productName = UbiqArchView;
+			productReference = C0BB010E1DAED22A0030E81A /* UbiqArchView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0BB01211DAED22A0030E81A /* UbiqArchViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0BB01391DAED22A0030E81A /* Build configuration list for PBXNativeTarget "UbiqArchViewTests" */;
+			buildPhases = (
+				C0BB011E1DAED22A0030E81A /* Sources */,
+				C0BB011F1DAED22A0030E81A /* Frameworks */,
+				C0BB01201DAED22A0030E81A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0BB01241DAED22A0030E81A /* PBXTargetDependency */,
+			);
+			name = UbiqArchViewTests;
+			productName = UbiqArchViewTests;
+			productReference = C0BB01221DAED22A0030E81A /* UbiqArchViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C0BB012C1DAED22A0030E81A /* UbiqArchViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0BB013C1DAED22A0030E81A /* Build configuration list for PBXNativeTarget "UbiqArchViewUITests" */;
+			buildPhases = (
+				C0BB01291DAED22A0030E81A /* Sources */,
+				C0BB012A1DAED22A0030E81A /* Frameworks */,
+				C0BB012B1DAED22A0030E81A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0BB012F1DAED22A0030E81A /* PBXTargetDependency */,
+			);
+			name = UbiqArchViewUITests;
+			productName = UbiqArchViewUITests;
+			productReference = C0BB012D1DAED22A0030E81A /* UbiqArchViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0BB01061DAED2290030E81A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Piqe Studio";
+				TargetAttributes = {
+					C0BB010D1DAED2290030E81A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = J7MY3N22B3;
+						ProvisioningStyle = Automatic;
+					};
+					C0BB01211DAED22A0030E81A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = J7MY3N22B3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C0BB010D1DAED2290030E81A;
+					};
+					C0BB012C1DAED22A0030E81A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = J7MY3N22B3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C0BB010D1DAED2290030E81A;
+					};
+				};
+			};
+			buildConfigurationList = C0BB01091DAED2290030E81A /* Build configuration list for PBXProject "UbiqArchView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0BB01051DAED2290030E81A;
+			productRefGroup = C0BB010F1DAED22A0030E81A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0BB010D1DAED2290030E81A /* UbiqArchView */,
+				C0BB01211DAED22A0030E81A /* UbiqArchViewTests */,
+				C0BB012C1DAED22A0030E81A /* UbiqArchViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0BB010C1DAED2290030E81A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0BB011C1DAED22A0030E81A /* LaunchScreen.storyboard in Resources */,
+				C0BB01191DAED22A0030E81A /* Assets.xcassets in Resources */,
+				C0BB01171DAED22A0030E81A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0BB01201DAED22A0030E81A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0BB012B1DAED22A0030E81A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0BB010A1DAED2290030E81A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0BB01141DAED22A0030E81A /* ViewController.swift in Sources */,
+				C0BB01401DAED5650030E81A /* UbiqArchView.swift in Sources */,
+				C0BB01121DAED22A0030E81A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0BB011E1DAED22A0030E81A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0BB01271DAED22A0030E81A /* UbiqArchViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0BB01291DAED22A0030E81A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0BB01321DAED22A0030E81A /* UbiqArchViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0BB01241DAED22A0030E81A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0BB010D1DAED2290030E81A /* UbiqArchView */;
+			targetProxy = C0BB01231DAED22A0030E81A /* PBXContainerItemProxy */;
+		};
+		C0BB012F1DAED22A0030E81A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0BB010D1DAED2290030E81A /* UbiqArchView */;
+			targetProxy = C0BB012E1DAED22A0030E81A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0BB01151DAED22A0030E81A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0BB01161DAED22A0030E81A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0BB011A1DAED22A0030E81A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0BB011B1DAED22A0030E81A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0BB01341DAED22A0030E81A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C0BB01351DAED22A0030E81A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0BB01371DAED22A0030E81A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J7MY3N22B3;
+				INFOPLIST_FILE = UbiqArchView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aabrahamyan.UbiqArchView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C0BB01381DAED22A0030E81A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J7MY3N22B3;
+				INFOPLIST_FILE = UbiqArchView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aabrahamyan.UbiqArchView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C0BB013A1DAED22A0030E81A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = J7MY3N22B3;
+				INFOPLIST_FILE = UbiqArchViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aabrahamyan.UbiqArchViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UbiqArchView.app/UbiqArchView";
+			};
+			name = Debug;
+		};
+		C0BB013B1DAED22A0030E81A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = J7MY3N22B3;
+				INFOPLIST_FILE = UbiqArchViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aabrahamyan.UbiqArchViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UbiqArchView.app/UbiqArchView";
+			};
+			name = Release;
+		};
+		C0BB013D1DAED22A0030E81A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = J7MY3N22B3;
+				INFOPLIST_FILE = UbiqArchViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aabrahamyan.UbiqArchViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = UbiqArchView;
+			};
+			name = Debug;
+		};
+		C0BB013E1DAED22A0030E81A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = J7MY3N22B3;
+				INFOPLIST_FILE = UbiqArchViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aabrahamyan.UbiqArchViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = UbiqArchView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0BB01091DAED2290030E81A /* Build configuration list for PBXProject "UbiqArchView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0BB01341DAED22A0030E81A /* Debug */,
+				C0BB01351DAED22A0030E81A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0BB01361DAED22A0030E81A /* Build configuration list for PBXNativeTarget "UbiqArchView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0BB01371DAED22A0030E81A /* Debug */,
+				C0BB01381DAED22A0030E81A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C0BB01391DAED22A0030E81A /* Build configuration list for PBXNativeTarget "UbiqArchViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0BB013A1DAED22A0030E81A /* Debug */,
+				C0BB013B1DAED22A0030E81A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C0BB013C1DAED22A0030E81A /* Build configuration list for PBXNativeTarget "UbiqArchViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0BB013D1DAED22A0030E81A /* Debug */,
+				C0BB013E1DAED22A0030E81A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0BB01061DAED2290030E81A /* Project object */;
+}
