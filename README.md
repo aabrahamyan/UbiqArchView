@@ -54,6 +54,10 @@ ubiqArchView.setStateInProgress()
 // Sets state Normal
 ubiqArchView.setStateNormal()
 ```
+Modify animatable progress by updating 'progress' property
+```swift
+ubiqArchView.progress = 0.7
+```
 
 # License
 
