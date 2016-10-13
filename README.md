@@ -31,18 +31,19 @@ pod "UbiqArchView"
 ## Manual Installation
 Copy UbiqArchView.swift into your project
 
+## Usage
 You can initialize it from XIB file as well as manually:
 ```swift    
-    let ubiqArchView = UbiqArchView(frame: CGRect(origin: point, size: boundSize))
+let ubiqArchView = UbiqArchView(frame: CGRect(origin: point, size: boundSize))
 ```
 Update default parameters by setting them externaly:
 ```swift
-    //Add symbol size
-    ubiqArchView.symbolSize = 20
-    // Width of inner static circle and broken animatable arch circle
-    ubiqArchView.archlineWidth = 3
-    // Progress circle line width
-    ubiqArchView.progressLineWidth = 6
+//Add symbol size
+ubiqArchView.symbolSize = 20
+// Width of inner static circle and broken animatable arch circle
+ubiqArchView.archlineWidth = 3
+// Progress circle line width
+ubiqArchView.progressLineWidth = 6
 ```
 Modify state when your process/task is pending, inprogress or finished
 ```swift
