@@ -64,10 +64,9 @@ class ViewController: UIViewController {
     // MARK: Helpers
     
     private final func isTimeUp (timeInterval: TimeInterval) -> Bool {
-        let seconds = Int(timeInterval)
         
-        // Up to 3 seconds
-        if seconds > 3 {
+        // after some time
+        if timeInterval > 1.5 {
             inProgress = true
             return true
         }
