@@ -55,4 +55,12 @@ ubiqArchView.setStateInProgress()
 ubiqArchView.setStateNormal()
 ```
 
+# License
+
+UbiqArchView is available under the MIT license. See the LICENSE file for more info.
+
+## Author
+
+Armen Abrahamyan, abrahamyan.armen@gmail.com
+
 
