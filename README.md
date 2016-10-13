@@ -62,5 +62,6 @@ UbiqArchView is available under the MIT license. See the LICENSE file for more i
 ## Author
 
 Armen Abrahamyan, abrahamyan.armen@gmail.com
+Twitter: @VvV_Spawn
 
 
