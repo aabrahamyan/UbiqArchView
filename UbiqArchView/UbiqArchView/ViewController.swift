@@ -22,9 +22,9 @@ class ViewController: UIViewController {
         //Add symbol size
         ubiqArchView.symbolSize = 20
         // Width of inner static circle and broken animatable arch circle
-        ubiqArchView.archlineWidth = 6
+        ubiqArchView.archlineWidth = 3
         // Progress circle line width
-        ubiqArchView.progressLineWidth = 12
+        ubiqArchView.progressLineWidth = 6
         
         // Sets Pending state
         ubiqArchView.setStatePending()
