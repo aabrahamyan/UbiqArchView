@@ -66,17 +66,29 @@ import UIKit
     }
         
     
-    @objc var archlineWidth: CGFloat = 1
-    @objc var progressLineWidth: CGFloat = 3
-    @objc var rotationDuration: CFTimeInterval = 1.0
-    @objc var symbolSize: CGFloat = 10
-    @objc var progress: Double {
+    @objc var archlineWidth: CGFloat = 2 {
         didSet {
-            DispatchQueue.main.async {
-                self.setNeedsDisplay()
-            }
+            brokenCircle?.lineWidth = archlineWidth
+            staticCircle?.lineWidth = archlineWidth
         }
     }
+    @objc var progressLineWidth: CGFloat = 4 {
+        didSet {
+            progressCircle?.lineWidth = progressLineWidth
+        }
+    }
+    @objc var symbolSize: CGFloat = 10 {
+        didSet {
+            symbolLayer?.path = nil
+            drawSymbol()
+        }
+    }
+    @objc var progress: Double {
+        didSet {
+            self.setNeedsDisplay()
+        }
+    }
+    @objc var rotationDuration: CFTimeInterval = 1.0
     /**
     * Overwritten tintColor, affects also circle layers stroke and fill colors
     */
@@ -255,7 +267,6 @@ import UIKit
     }
     
     // MARK: Redraws on bounds changes
-    
     override func layoutSubviews() {
         super.layoutSubviews()
         
@@ -303,11 +314,12 @@ import UIKit
         let startAngle = -CGFloat(M_PI_2)
         let endAngle = CGFloat(progress * 2 * M_PI) + startAngle
         let center = CGPoint(x: bounds.size.width / 2, y: bounds.size.height / 2)
-        let radius = (bounds.size.width - progressLineWidth) / 2
+        let radius = (bounds.size.width - (progressLineWidth + archlineWidth)) / 2
         
         let bezier = UIBezierPath()
         bezier.lineWidth = progressLineWidth
         bezier.lineCapStyle = .round
+        
         
         bezier.addArc(withCenter: center, radius: radius, startAngle: startAngle, endAngle: endAngle, clockwise: true)
         

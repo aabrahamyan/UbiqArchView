@@ -419,6 +419,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J7MY3N22B3;
 				INFOPLIST_FILE = UbiqArchView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aabrahamyan.UbiqArchView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -432,6 +433,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J7MY3N22B3;
 				INFOPLIST_FILE = UbiqArchView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aabrahamyan.UbiqArchView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,6 +518,7 @@
 				C0BB01381DAED22A0030E81A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0BB01391DAED22A0030E81A /* Build configuration list for PBXNativeTarget "UbiqArchViewTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +527,7 @@
 				C0BB013B1DAED22A0030E81A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0BB013C1DAED22A0030E81A /* Build configuration list for PBXNativeTarget "UbiqArchViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +536,7 @@
 				C0BB013E1DAED22A0030E81A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
