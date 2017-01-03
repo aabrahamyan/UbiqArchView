@@ -73,8 +73,8 @@ ubiqState = .pending
 
 ## Whats New ?
 
-Added pause state support
-Added enum for handling state more correctly
+* Added pause state support
+* Added enum for handling state more correctly
 
 # License
 
