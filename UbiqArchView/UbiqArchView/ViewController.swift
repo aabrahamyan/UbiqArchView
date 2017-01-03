@@ -25,6 +25,10 @@ class ViewController: UIViewController {
         ubiqArchView.archlineWidth = 3
         // Progress circle line width
         ubiqArchView.progressLineWidth = 6
+        // Set vertical distance from top and bottom of circle for pause symbols
+        ubiqArchView.pauseSymbolTopMultiplicationFactor = 8
+        // Set horizontal distance between pause symbols
+        ubiqArchView.pauseSymbolsDistance = 5
         
         // Sets Pending state
         ubiqArchView.setStatePending()
@@ -32,7 +36,7 @@ class ViewController: UIViewController {
         timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: { (timer) in
             
             if !self.inProgress {
-                if self.isTimeUp(timeInterval: self.startTimeInterval) {
+                if self.isTimeUp(timeInterval: self.startTimeInterval, compareeInterval: 1.5) {
                     self.ubiqArchView.setStateInProgress()
                 } else {
                     self.startTimeInterval += timer.timeInterval
@@ -40,7 +44,7 @@ class ViewController: UIViewController {
             } else {
                 if self.ubiqArchView.progress < 1 {
                     self.ubiqArchView.progress += timer.timeInterval
-                } else {
+                } else {                    
                     self.ubiqArchView.progress = 1.0
                     self.inProgress = false
                     self.startTimeInterval = 0.0
@@ -62,11 +66,10 @@ class ViewController: UIViewController {
     }
     
     // MARK: Helpers
-    
-    private final func isTimeUp (timeInterval: TimeInterval) -> Bool {
+    private final func isTimeUp (timeInterval: TimeInterval, compareeInterval: TimeInterval) -> Bool {
         
         // after some time
-        if timeInterval > 1.5 {
+        if timeInterval > compareeInterval {
             inProgress = true
             return true
         }

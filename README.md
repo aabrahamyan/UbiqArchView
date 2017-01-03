@@ -44,6 +44,12 @@ ubiqArchView.symbolSize = 20
 ubiqArchView.archlineWidth = 3
 // Progress circle line width
 ubiqArchView.progressLineWidth = 6
+// Pause symbol thickness
+ubiqArchView.pauseSymbolThickness = 4
+// Vertical distance between pause symbols and circle
+ubiqArchView.pauseSymbolTopMultiplicationFactor = 4
+// Horizontal distance between two pause symbols
+ubiqArchView.pauseSymbolsDistance = 3
 ```
 Modify state when your process/task is pending, inprogress or finished
 ```swift
@@ -51,6 +57,8 @@ Modify state when your process/task is pending, inprogress or finished
 ubiqArchView.setStatePending()
 // Sets In Progress state
 ubiqArchView.setStateInProgress()
+// Sets Paused state
+ubiqArchView.setStateInProgressWithPaused()
 // Sets state Normal
 ubiqArchView.setStateNormal()
 ```
@@ -58,6 +66,15 @@ Modify animatable progress by updating 'progress' property
 ```swift
 ubiqArchView.progress = 0.7
 ```
+Check or change process state by accessing or modifying ubiqState property
+```swift
+ubiqState = .pending
+```
+
+## Whats New ?
+
+Added pause state support
+Added enum for handling state more correctly
 
 # License
 

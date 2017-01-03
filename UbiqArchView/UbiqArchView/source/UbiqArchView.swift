@@ -9,12 +9,24 @@
 import Foundation
 import UIKit
 
+@objc enum UbiqState : Int {
+    case normal
+    case inProgress
+    case inProgressPaused
+    case pending
+}
+
 @objc class UbiqArchView: UIControl {
+    
+    @objc var ubiqState: UbiqState = .normal
     
     @objc var brokenCircle: CAShapeLayer?
     @objc var progressCircle: CAShapeLayer?
     @objc var staticCircle: CAShapeLayer?
     @objc var symbolLayer: CAShapeLayer?
+    
+    @objc var pauseLeftSymbol: CAShapeLayer?
+    @objc var pauseRightSymbol: CAShapeLayer?
     
     
     // In Class Constants defined as struct
@@ -54,6 +66,10 @@ import UIKit
         createStopSymbol()
         drawSymbol()
         
+        // Payse Symbols
+        createPauseSymbol()
+        drawPauseSymbol()
+        
         // Progress
         createProgressLayer()
         drawStaticCircle()
@@ -83,6 +99,31 @@ import UIKit
             drawSymbol()
         }
     }
+    
+    @objc var pauseSymbolThickness: CGFloat = 4 {
+        didSet {
+            pauseRightSymbol?.path = nil
+            pauseLeftSymbol?.path = nil
+            drawPauseSymbol()
+        }
+    }
+    
+    @objc var pauseSymbolTopMultiplicationFactor: CGFloat = 4 {
+        didSet {
+            pauseRightSymbol?.path = nil
+            pauseLeftSymbol?.path = nil
+            drawPauseSymbol()
+        }
+    }
+    
+    @objc var pauseSymbolsDistance: CGFloat = 0 {
+        didSet {
+            pauseRightSymbol?.path = nil
+            pauseLeftSymbol?.path = nil
+            drawPauseSymbol()
+        }
+    }
+    
     @objc var progress: Double {
         didSet {
             self.setNeedsDisplay()
@@ -106,6 +147,15 @@ import UIKit
             
             progressCircle?.strokeColor = tintColor.cgColor
             progressCircle?.fillColor = UIColor.clear.cgColor
+            
+            progressCircle?.strokeColor = tintColor.cgColor
+            progressCircle?.fillColor = UIColor.clear.cgColor
+            
+            pauseLeftSymbol?.strokeColor = UIColor.clear.cgColor
+            pauseLeftSymbol?.fillColor = tintColor.cgColor
+            pauseRightSymbol?.strokeColor = UIColor.clear.cgColor
+            pauseRightSymbol?.fillColor = tintColor.cgColor
+            
         }
     }
     
@@ -122,6 +172,10 @@ import UIKit
         progressCircle?.isHidden = true
         staticCircle?.isHidden = true
         symbolLayer?.isHidden = true
+        pauseRightSymbol?.isHidden = true
+        pauseLeftSymbol?.isHidden = true
+        
+        ubiqState = .normal
     }
    
     /**
@@ -135,6 +189,10 @@ import UIKit
         progressCircle?.isHidden = true
         staticCircle?.isHidden = true
         symbolLayer?.isHidden = true
+        pauseRightSymbol?.isHidden = true
+        pauseLeftSymbol?.isHidden = true
+        
+        ubiqState = .pending
     }
     
     /**
@@ -148,6 +206,25 @@ import UIKit
         progressCircle?.isHidden = false
         staticCircle?.isHidden = false
         symbolLayer?.isHidden = false
+        pauseRightSymbol?.isHidden = true
+        pauseLeftSymbol?.isHidden = true
+        
+        ubiqState = .inProgress
+    }
+    
+    @objc
+    final func setStateInProgressWithPaused() {
+        // State In Progress
+        removePartialArchAnimation()
+        isUserInteractionEnabled = true
+        brokenCircle?.isHidden = true
+        progressCircle?.isHidden = false
+        staticCircle?.isHidden = false
+        symbolLayer?.isHidden = true
+        pauseRightSymbol?.isHidden = false
+        pauseLeftSymbol?.isHidden = false
+        
+        ubiqState = .inProgressPaused
     }
     
     // MARK: Layers creation
@@ -191,6 +268,19 @@ import UIKit
         symbolLayer = CAShapeLayer()
         symbolLayer?.contentsScale = UIScreen.main.scale
         layer.addSublayer(symbolLayer!)
+    }
+    
+    /**
+     * Creates 'Pause' symbols in arch view
+     */
+    private final func createPauseSymbol() {
+        pauseLeftSymbol = CAShapeLayer()
+        pauseLeftSymbol?.contentsScale = UIScreen.main.scale
+        layer.addSublayer(pauseLeftSymbol!)
+        
+        pauseRightSymbol = CAShapeLayer()
+        pauseRightSymbol?.contentsScale = UIScreen.main.scale
+        layer.addSublayer(pauseRightSymbol!)
     }
     
     // MARK: Core graphics Related
@@ -240,7 +330,25 @@ import UIKit
         symbolLayer?.path = bezier.cgPath
         symbolLayer?.lineWidth = 0
     }
-
+    
+    /**
+     * Draws 'Pause' symbols view
+     */
+    private final func drawPauseSymbol() {
+        
+        let topPosition = pauseSymbolTopMultiplicationFactor / 2
+        
+        let leftRect = CGRect(x: bounds.midX - 2*pauseSymbolThickness - pauseSymbolsDistance, y: topPosition*pauseSymbolThickness, width: pauseSymbolThickness, height: bounds.height - pauseSymbolTopMultiplicationFactor*pauseSymbolThickness)
+        let leftBezier = UIBezierPath(rect: leftRect)
+        pauseLeftSymbol?.path = leftBezier.cgPath
+        pauseLeftSymbol?.lineWidth = 0
+        
+        let rightRect = CGRect(x: bounds.midX + pauseSymbolThickness + pauseSymbolsDistance, y: topPosition*pauseSymbolThickness, width: pauseSymbolThickness, height: bounds.height - pauseSymbolTopMultiplicationFactor*pauseSymbolThickness)
+        let rightBezier = UIBezierPath(rect: rightRect)
+        pauseRightSymbol?.path = rightBezier.cgPath
+        pauseRightSymbol?.lineWidth = 0
+    }
+    
     /**
      * Animates broken arch for 'Pending' state
      */
@@ -276,6 +384,7 @@ import UIKit
         
         reDrawStaticCircle()
         reDrawSymbol()
+        reDrawPauseSymbol()
         reDrawPartialArch()
         
         progressCircle?.path = nil
@@ -304,6 +413,15 @@ import UIKit
     private final func reDrawSymbol() {
         symbolLayer?.path = nil
         drawSymbol()
+    }
+    
+    /**
+     * Redraws 'Pause' symbols
+     */
+    private final func reDrawPauseSymbol() {
+        pauseLeftSymbol?.path = nil
+        pauseRightSymbol?.path = nil
+        drawPauseSymbol()
     }
     
     
