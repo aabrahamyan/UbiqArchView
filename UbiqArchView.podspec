@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UbiqArchView'
-  s.version          = '0.0.5'
+  s.version          = '0.0.6'
   s.summary          = 'UbiqArchView is a state related animatable view.'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ UbiqArchView is an apple App Store like animation, that shows circular progress 
   s.source           = { :git => 'https://github.com/aabrahamyan/UbiqArchView.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/VvV_Spawn'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '9.3'
 
   s.source_files = 'UbiqArchView/UbiqArchView/source/**/*'
   
